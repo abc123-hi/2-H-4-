@@ -68,8 +68,8 @@
         const seatId = urlParams.get('id');
         const seatInfo = document.getElementById('seatInfo');
 
-        // 顯示座位號碼
-        seatInfo.innerText = seatId ? seatId : "1廳H排4號";
+        // 顯示座位號碼，若 URL 中沒有傳入 id，則預設顯示 "2廳H排4號"
+        seatInfo.innerText = seatId ? seatId : "2廳H排4號";
     </script>
 </body>
 </html>
